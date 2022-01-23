@@ -7,6 +7,7 @@ Plug 'NLKNguyen/papercolor-theme'
 " NERDTree plugins
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'preservim/nerdcommenter'
 
 " python-mode
 Plug 'python-mode/python-mode', {'for': 'python'}
@@ -69,6 +70,16 @@ nmap <C-f> :NERDTreeToggle<CR>
 autocmd VIMEnter * NERDTree | wincmd p
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabFree() | quit | endif
+
+
+" NerdCommenter settings
+let g:NERDCreateDefaultMappings = 1
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+let g:NERDDefaultAlight = 'left'
+let g:NERDCommentEmptyLines = 1
+let g:NERDTrimTrailingWhitespace = 1
+let g:NERDToggleCheckAllLines = 1
 
 
 " Split navigation
