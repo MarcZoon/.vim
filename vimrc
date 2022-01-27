@@ -9,11 +9,18 @@ Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'preservim/nerdcommenter'
 
-" python-mode
+" python
 Plug 'python-mode/python-mode', {'for': 'python'}
+Plug 'davidhalter/jedi-vim'
 
-" latex live preview
-Plug 'xuhdev/vim-latex-preview', {'for': 'tex'}
+" latex
+" Plug 'xuhdev/vim-latex-preview', {'for': 'tex'}
+
+" git
+Plug 'airblade/vim-gitgutter'
+
+" airline
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
@@ -41,7 +48,8 @@ set nocompatible
 
 
 " Remap leader key
-let mapleader = ","
+nnoremap <space> <Nop>
+let mapleader=' ' 
 
 
 " Default indentation
@@ -62,6 +70,20 @@ set hlsearch
 nnoremap <leader><space> :noh<cr>
 nnoremap <tab> %
 vnoremap <tab> %
+
+
+" Tab navigation
+noremap <leader>1 1gt
+noremap <leader>2 2gt
+noremap <leader>3 3gt
+noremap <leader>4 4gt
+noremap <leader>5 5gt
+noremap <leader>6 6gt
+noremap <leader>7 7gt
+noremap <leader>8 8gt
+noremap <leader>9 9gt
+noremap <leader>- gt
+noremap <leader>= gT
 
 
 " NERDTree settings
@@ -100,6 +122,8 @@ inoremap <left> <nop>
 inoremap <right> <nop>
 
 
+" airline
+let g:airline#extensions#tabline#enabled = 1
 
 
 
