@@ -11,10 +11,12 @@ Plug 'preservim/nerdcommenter'
 
 " python
 Plug 'python-mode/python-mode', {'for': 'python'}
-Plug 'davidhalter/jedi-vim'
+Plug 'davidhalter/jedi-vim', {'for': 'python'}
+Plug 'fisadev/vim-isort'
 
 " latex
-" Plug 'xuhdev/vim-latex-preview', {'for': 'tex'}
+"Plug 'xuhdev/vim-latex-live-preview', {'for': 'tex'}
+"Plug 'vim-latex/vim-latex', {'for': 'tex'}
 
 " git
 Plug 'airblade/vim-gitgutter'
@@ -124,6 +126,4 @@ inoremap <right> <nop>
 
 " airline
 let g:airline#extensions#tabline#enabled = 1
-
-
 
