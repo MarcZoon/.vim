@@ -41,7 +41,7 @@ set nobackup
 set undodir=~/.vim/undodir
 set undofile
 set hidden
-set scrolloff=8
+set scrolloff=12
 set signcolumn=yes
 set colorcolumn=80
 set updatetime=50
