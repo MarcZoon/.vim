@@ -1,8 +1,8 @@
 " Enable Code Folding
 set foldmethod=indent
 set foldlevel=99
-" Map za to spacebar
-nnoremap <space> za
+" Map za to ,
+nnoremap , za
 
 
 " Indentation
