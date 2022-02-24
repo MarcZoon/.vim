@@ -1,9 +1,14 @@
 " Enable Code Folding
 set foldmethod=indent
 set foldlevel=99
-" Map za to ,
+
+
+" Map , to za
 nnoremap , za
 
+
+" Map ctrl b to :Black
+nnoremap <C-b> :Black<CR>
 
 " Indentation
 set tabstop=4

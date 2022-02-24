@@ -13,6 +13,7 @@ Plug 'preservim/nerdcommenter'
 Plug 'python-mode/python-mode', {'for': 'python'}
 Plug 'davidhalter/jedi-vim', {'for': 'python'}
 Plug 'fisadev/vim-isort'
+Plug 'psf/black', {'branch': 'stable'}
 
 " latex
 "Plug 'xuhdev/vim-latex-live-preview', {'for': 'tex'}
@@ -127,3 +128,6 @@ inoremap <right> <nop>
 " airline
 let g:airline#extensions#tabline#enabled = 1
 
+
+" Black config
+let g:black_linelength = 80
