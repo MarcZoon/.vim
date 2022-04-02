@@ -14,10 +14,15 @@ Plug 'python-mode/python-mode', {'for': 'python'}
 Plug 'davidhalter/jedi-vim', {'for': 'python'}
 Plug 'fisadev/vim-isort'
 Plug 'psf/black', {'branch': 'stable'}
+"Plug 'heavenshell/vim-pydocstring', {'do': 'make install', 'for': 'python'}
 
 " latex
 "Plug 'xuhdev/vim-latex-live-preview', {'for': 'tex'}
 "Plug 'vim-latex/vim-latex', {'for': 'tex'}
+
+" markdown
+Plug 'preservim/vim-markdown'
+Plug 'iamcco/markdown-preview.nvim', {'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
 " git
 Plug 'airblade/vim-gitgutter'
@@ -131,3 +136,11 @@ let g:airline#extensions#tabline#enabled = 1
 
 " Black config
 let g:black_linelength = 80
+
+
+" pydocstring
+"nnoremap <leader>s :Pydocstring<cr>
+
+
+" MarkdownPreview
+nnoremap <leader>p g:MarkdownPreviewToggle
