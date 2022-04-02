@@ -98,8 +98,8 @@ noremap <leader>= gT
 nmap <C-f> :NERDTreeToggle<CR>
 
 autocmd VIMEnter * NERDTree | wincmd p
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
-autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabFree() | quit | endif
+" autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+" autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabFree() | quit | endif
 
 
 " NerdCommenter settings
