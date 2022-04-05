@@ -21,7 +21,7 @@ Plug 'psf/black', {'branch': 'stable'}
 "Plug 'vim-latex/vim-latex', {'for': 'tex'}
 
 " markdown
-Plug 'preservim/vim-markdown'
+" Plug 'preservim/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', {'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
 " git
