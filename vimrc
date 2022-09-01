@@ -4,6 +4,12 @@ call plug#begin()
 " PaperColor Theme
 Plug 'NLKNguyen/papercolor-theme'
 
+" Syntax Highlighting
+Plug 'sheerun/vim-polyglot'
+
+" Code Completion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 " NERDTree plugins
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
